@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Text Form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+      <form>
+
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname">
+            <br>
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname">
+
+          <br>
+          <div>
+            <label for="font">Font: </label>
+            <br>
+            <input type="radio" id="arial" name="font" value="Arial">
+            <label for="arial">Arial</label>
+            
+            <br>
+            <input type="radio" id="times new roman" name="font" value="Times New Roman">
+            <label for="tmn">Times New Roman</label>
+            
+            <br>
+            <input type="radio" id="monospace" name="font" value="Monospace">
+            <label for="bsmt">Monospace</label>
+            
+
+          </div>
+
+          <br>
+          <div>
+            <label for="slider">Font Size: </label>
+            <input type="range" min="12" max="48" id="slider">
+          </div>
+
+          <br>
+          <div>
+            <label for="head">Background Color</label>
+            <input type="color" id="bColor" name="head">
+        </div>
+        
+        <br>
+        <div>
+            <label for="body">Text Color</label>
+            <input type="color" id="tColor" name="body">
+        </div>
+
+        <br>
+        <button type="submit" id="btn">Submit</button>
+      </form>
+
+      <br>
+        <button id="reset">Reset</button>
+
+      <br>
+      <div id="output">
+        <p id="para"></p>
+      </div>
+
+    <br>  
+    <a href="../index.html">Back</a>
+	<script src="index.js"></script>
+  </body>
+</html>

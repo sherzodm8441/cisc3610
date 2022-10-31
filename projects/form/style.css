@@ -1,0 +1,8 @@
+#output {
+   width:500px; /* or whatever width you want. */
+   max-width:500px; /* or whatever width you want. */
+   height:250px; /* or whatever width you want. */
+   max-height:250px; /* or whatever width you want. */
+   display: inline-block;
+   background-color: aqua;
+}
