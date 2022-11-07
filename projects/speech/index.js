@@ -62,7 +62,7 @@ document.querySelector("#btn").onclick = () => {
     }
 };
 
-speechRecognition.onend = () => {
-    document.querySelector("#btn").value = "Speak";
-}
+// speechRecognition.onend = () => {
+//     document.querySelector("#btn").value = "Speak";
+// }
  
