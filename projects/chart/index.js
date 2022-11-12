@@ -22,7 +22,31 @@ new Chart(document.getElementById("line-chart"), {
     options: {
       title: {
         display: true,
-        text: 'All US Rocket Launches (1957-2019)'
+        text: "All US Rocket Launches (1950's-2010's)"
       }
     }
   });
+
+new Chart(document.getElementById("bar-chart-grouped"), {
+    type: 'bar',
+    data: {
+      labels: ["<1","1–4","5–14","15–24","25–34","35–44","45–54","55–64","65–74","75–84","≥85"],
+      datasets: [
+        {
+          label: "All Deaths",
+          backgroundColor: "#3e95cd",
+          data: [19582,3529,5623,35816,73486,104490,191142,440549,674507,822084,1012805]
+        }, {
+          label: "Covid Related Deaths",
+          backgroundColor: "#8e5ea2",
+          data: [52,25,68,612,2609,6756,18250,45377,82055,106020,122707]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Number of US Deaths by Age Group (2020)'
+      }
+    }
+});
