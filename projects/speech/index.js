@@ -16,7 +16,8 @@ context.fill();
 context.stroke();
 
 const speechRecognition = new window.webkitSpeechRecognition();
-
+// const speechRecognition = new SpeechRecognition();
+speechRecognition.continuous = true;
 
 function reColor(){
     context.fillStyle = "yellow";
@@ -62,7 +63,8 @@ document.querySelector("#btn").onclick = () => {
     }
 };
 
-// speechRecognition.onend = () => {
-//     document.querySelector("#btn").value = "Speak";
-// }
+speechRecognition.onend = () => {
+    // document.querySelector("#btn").value = "Speak";
+    console.log("ended");
+}
  
